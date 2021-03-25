@@ -1,0 +1,14 @@
+[book]
+authors = ["ESSARRAJ Fouad"]
+language = "en"
+multilingual = false
+src = "src"
+title = "PHP"
+
+[output.html]
+additional-css = ["theme/custom.css"]
+additional-js = ["theme/custom.js"]
+default-theme = "Codeur"
+
+[build]
+build-dir = "formation/php"
