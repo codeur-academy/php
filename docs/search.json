@@ -1,7 +1,7 @@
 {
 "index-html": {
       "title": "Initiation à PHP",
-      "content"	 : "Tutoriel PHPNous allons apprendre dans cette formation comment développer des pages web avec PHP.",
+      "content"	 : "Tutoriel PHPNous allons apprendre dans cette formation comment développer les pages web avec PHP.",
       "url": "/php/index.html",
       "author": "",
       "categories": "introduction"
@@ -14,6 +14,35 @@
       "categories": "introduction"
     }
 ,
+"index-html": {
+      "title": "Qu'est ce que PHP ?",
+      "content"	 : "Qu’est ce que PHP ?  PHP (Hypertext Preprocessor) est un langage de scripts généraliste et Open Source, spécialement conçu pour le développement d’applications web. Il peut être intégré facilement au HTML.          PHP est un langage de programmation pour la création de la programmation back-end des pages web.      Son interfaçage avec la base de données MySQL permet d’élaborer des applications rapides, avec une actualisation en temps réel des données.      Installer PHP est la solution pour stoker et afficher des milliers d’informations sur vos sites web.      ",
+      "url": "/php/index.html",
+      "author": "",
+      "categories": "introduction"
+    },
+"index-html#les-principaux-avantages-dutiliser-un-script-php": {
+      "title": "Les principaux avantages d’utiliser un script PHP  (Qu'est ce que PHP ?)",
+      "content"	 : "Les principaux avantages d’utiliser un script PHP  Exécution record des scripts coté serveur.  Protections des scripts.  Langage gratuit en Open Source.  Simplicité d’interfaçage avec des systèmes de bases de données comme MySQL.",
+      "url": "/php/index.html#les-principaux-avantages-dutiliser-un-script-php",
+      "author": "",
+      "categories": "introduction"
+    },
+"index-html#architecture-client--serveur": {
+      "title": "Architecture CLIENT- SERVEUR  (Qu'est ce que PHP ?)",
+      "content"	 : "Architecture CLIENT- SERVEUR  Votre navigateur est le CLIENT.          C’est lui qui demande la page web au serveur… et le client se fournit dans la base de donnée de fonctions et de contenus du serveur.        Description d’une requête HTTP basique :          Le navigateur envoi au serveur, qui héberge le site, l’adresse que vous avez tapé dans la barre d’adresses de votre navigateur.      Le serveur retourne après traitement le contenu de la page à votre navigateur      Observation :                  Avec ou sans PHP, le serveur traite la demande et retourne la page.          Additionner du PHP au traitement n’a aucune incidence sur le parcours basique de la requête http.          Le serveur va se charger de traiter vos scripts PHP et se chargera aussi du traitement des données de vos tables SQL, avant de renvoyer la page terminée à votre navigateur.                      Coté SERVEUR          Le PHP est interprété directement et uniquement par le serveur.      Les aspirateurs ne peuvent pas aspirer des pages PHP.      Celle-ci sont protégées contre le téléchargement par le serveur.      La seule manière d’accéder à vos pages PHP est par un client FTP / SSH comme Filezilla ou Putty .            Le serveur ne renvoi que des données (le résultat des traitements de requêtes ou de fonctions..) ce qui constitue le source de la page (HTML, JavaScript, CSS, etc. + des informations sur les headers…) à la machine du client.    Les différents langages comme le HTML, JavaScript ou CSS sont des langages CLIENTS.          Les scripts de ces différents langages sont téléchargés sur votre ordinateur et ensuite interprétés par votre navigateur.      ",
+      "url": "/php/index.html#architecture-client--serveur",
+      "author": "",
+      "categories": "introduction"
+    },
+"index-html#utilisation--dune-base-de-données": {
+      "title": "Utilisation  d’une base de données  (Qu'est ce que PHP ?)",
+      "content"	 : "Utilisation  d’une base de données  MySQL analyse et exécute le code SQL.  PHP sert de support pour envoyer des requêtes au serveur MySQL.  phpMyAdmin est une administration en Open Source pour administrer votre base de données MySQL.",
+      "url": "/php/index.html#utilisation--dune-base-de-données",
+      "author": "",
+      "categories": "introduction"
+    }
+,
 "plan-formation-html": {
       "title": "Plan du formation",
       "content"	 : "Plan du formation",
@@ -21,19 +50,115 @@
       "author": "",
       "categories": "introduction"
     },
-"plan-formation-html#introduction": {
-      "title": "Introduction  (Plan du formation)",
-      "content"	 : "Introduction  Introduction",
-      "url": "/php/plan-formation.html#introduction",
+"plan-formation-html#bien-démarrer-avec-php": {
+      "title": "Bien démarrer avec PHP  (Plan du formation)",
+      "content"	 : "Bien démarrer avec PHP  Bonjour tous le monde          Syntaxe : le minium pour commencer                  La fonction ECHO                    Environnement de développement                  Installation du PHP                    Comment ça marche : Client/ Serveur        Les 4 instructions du base          Entrée et sortie      Variable      Condition      Boucle        Concepts Web          GET &amp;amp; POST      Paramètres d’une page web PHP                  $_GET                    Passage des paramètres d’une page à l’autre                  $_POST                    ",
+      "url": "/php/plan-formation.html#bien-démarrer-avec-php",
       "author": "",
       "categories": "introduction"
     },
-"plan-formation-html#les-base-du-php": {
-      "title": "Les base du PHP  (Plan du formation)",
-      "content"	 : "Les base du PHP  Bonjour tous le monde          Syntaxe de base : le minium pour commencer                  La fonction ECHO                    Installation du PHP      Comment ça marche : Client/ Serveur        Les 4 instructions du base          Entrée et sortie      Variable      Condition      Boucle        Les base de programmation Web                  Installation    Les variables  Les chaines de caractères  Les Opérateurs  La fonction Include  Tests conditionnels - If  Tests conditionnels - If Else  Tests conditionnels - If - Else if - Else  Tests conditionnels - Switch  Boucles: Introduction  Boucle Foreach  Boucle While  Boucle Do while  Break et Continue  POST &amp;amp; GET  Les SESSIONS  Les COOKIES  Dates et Heures  Les fichiers textes  Les ModulosAu moment de commencer  Qu’est ce que PHP?  Une introduction à PHP  Variable   Tableau  Utiliser un formulaireLes bases de PHP  Introduction  Environnement de développement  Syntaxe  Types de variables  Constantes  Types d’opérateurs  Condition  Types de boucles  Tableaux  Chaînes de caractères  Concepts Web  GET &amp;amp; POST  Inclusion de fichiers  Fichiers et Entrée / Sorties  Fonctions  Cookies  Sessions  Envoi d’emails  Téléchargement de fichiers  Norme de codageNotion avancé  Variables prédéfinies  Expression régulière  Gestion des erreurs  Débogage  Date et heure  PHP et MySQL  PHP et AJAX  PHP et XML  Orienté objetFormulaire",
-      "url": "/php/plan-formation.html#les-base-du-php",
+"plan-formation-html#bases-du-php": {
+      "title": "Bases du PHP  (Plan du formation)",
+      "content"	 : "Bases du PHP  Syntaxe  Variable          Types de variables      Constantes        Dates et Heures  Tableaux  Chaînes de caractères  Opérateurs  Condition          Switch        Boucle          Foreach      While      Do while      Break et Continue        Inclusion de fichiers  SESSIONS  COOKIES  Fichiers  Fonctions",
+      "url": "/php/plan-formation.html#bases-du-php",
       "author": "",
       "categories": "introduction"
+    },
+"plan-formation-html#poo": {
+      "title": "POO  (Plan du formation)",
+      "content"	 : "POO  Orienté objet",
+      "url": "/php/plan-formation.html#poo",
+      "author": "",
+      "categories": "introduction"
+    },
+"plan-formation-html#notions-avancées": {
+      "title": "Notions avancées  (Plan du formation)",
+      "content"	 : "Notions avancées  Norme de codage  Variables prédéfinies  Expression régulière  Gestion des erreurs  Débogage  Envoi d’emails  Téléchargement de fichiers  PHP et MySQL  PHP et AJAX  PHP et XML",
+      "url": "/php/plan-formation.html#notions-avancées",
+      "author": "",
+      "categories": "introduction"
+    }
+,
+"bien-d-c3-a9marrer-avec-php-html": {
+      "title": "Bien démarrer avec PHP",
+      "content"	 : "Bien démarrer avec PHPDans cette partie de formation, nous allons démarrer notre apprentissage par les notions nécessaire pour commencer à apprendre la création des pages web avec PHP.Avant de commencer, nous allons installer l’environnement de développement nécessaire pour commencer à apprendre PHP. Dans un deuxième temps, nous allons apprendre comment programmer avec PHP en utilisant les quatre instructions de base de la programmation à savoir : Entrée et sortie, variable, condition, boucle. Dans un troisième temps, nous allons découvrir les comment créer des pages avec paramètres en utilisant le langage PHP.",
+      "url": "/php/bien-d%C3%A9marrer-avec-PHP.html",
+      "author": "",
+      "categories": "commencer-php"
+    }
+,
+"installation-php-html": {
+      "title": "Installation du PHP",
+      "content"	 : "Installation du PHP  Pourquoi installer PHP localement?          L’installation de PHP sur votre PC de développement vous permet de créer et de tester une application Web en toute sécurité sans affecter les données ou les systèmes de votre site Web. Cet article décrit l’installation de PHP en tant que module dans la version Windows d’Apache 2.2. Les utilisateurs de Mac et de Linux l’auront probablement déjà installé.      ",
+      "url": "/php/installation-php.html",
+      "author": "",
+      "categories": "commencer-php"
+    },
+"installation-php-html#étape-1-téléchargez-les-fichiers-dinstallation": {
+      "title": "Étape 1: téléchargez les fichiers d’installation  (Installation du PHP)",
+      "content"	 : "Étape 1: téléchargez les fichiers d’installation  Téléchargez le dernier package PHP stable depuis le site web          https://www.php.net/downloads      ",
+      "url": "/php/installation-php.html#étape-1-téléchargez-les-fichiers-dinstallation",
+      "author": "",
+      "categories": "commencer-php"
+    },
+"installation-php-html#étape-2-extraire-les-fichiers": {
+      "title": "Étape 2: extraire les fichiers  (Installation du PHP)",
+      "content"	 : "Étape 2: extraire les fichiers  Nous allons installer les fichiers PHP sur C:/php  créez donc ce dossier et extrayez-y le contenu du fichier ZIP.  PHP peut être installé n’importe où sur votre système, mais vous devrez modifier les chemins référencés dans les étapes suivantes.",
+      "url": "/php/installation-php.html#étape-2-extraire-les-fichiers",
+      "author": "",
+      "categories": "commencer-php"
+    },
+"installation-php-html#étape-3-ajouter-php-aux-variables-denvironnement": {
+      "title": "Étape 3: ajouter php aux variables d’environnement  (Installation du PHP)",
+      "content"	 : "Étape 3: ajouter php aux variables d’environnement  Pour s’assurer que Windows puisse trouver PHP, vous devez modifier la variable d’environnement de chemin.          Ouvrez Paramètres, tapez «variables d’environnement» dans le champ de recherche et ouvrez le résultat.      Sélectionnez l’onglet “Avancé”, puis cliquez sur le bouton “Variables d’environnement”.      Faites défiler la liste des variables système et cliquez sur “Chemin” suivi du bouton “Modifier”.      Cliquez sur “Modifier le texte” et ajoutez ; C: php à la fin de la ligne de valeur de la variable (n’oubliez pas le point-virgule).      ",
+      "url": "/php/installation-php.html#étape-3-ajouter-php-aux-variables-denvironnement",
+      "author": "",
+      "categories": "commencer-php"
+    },
+"installation-php-html#étape-4-test-dun-fichier-php": {
+      "title": "Étape 4: Test d’un fichier PHP  (Installation du PHP)",
+      "content"	 : "Étape 4: Test d’un fichier PHP  Créez un fichier nommé index.php  Lancer le serveur PHP : php -S localhost:8080",
+      "url": "/php/installation-php.html#étape-4-test-dun-fichier-php",
+      "author": "",
+      "categories": "commencer-php"
+    },
+"installation-php-html#références": {
+      "title": "Références  (Installation du PHP)",
+      "content"	 : "Références  Current Stable PHP  Installation sur les système Windows",
+      "url": "/php/installation-php.html#références",
+      "author": "",
+      "categories": "commencer-php"
+    }
+,
+"hello-world-php-html": {
+      "title": "Bonjour PHP",
+      "content"	 : "Bonjour PHP  Les pages web qui exploitent PHP sont traitées comme des pages HTML standards, et vous pouvez les créer, éditer et effacer tout comme vous le faites normalement avec des pages HTML classiques.",
+      "url": "/php/hello-world-php.html",
+      "author": "",
+      "categories": "commencer-php"
+    },
+"hello-world-php-html#notre-premier-script-php--bonjourphp": {
+      "title": "Notre premier script PHP : bonjour.php  (Bonjour PHP)",
+      "content"	 : "Notre premier script PHP : bonjour.php  Créez un fichier appelé bonjour.php dans votre dossier  avec le contenu suivant :12345678&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;  &amp;lt;title&amp;gt;Bonjour PHP&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt;     &amp;lt;p&amp;gt;&amp;lt;?php echo &#39;Bonjour le monde&#39;; ?&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;  Utilisez votre navigateur pour accéder au fichier via votre serveur web, en ajoutant le nom de fichier /bonjour.php. Le fichier sera analysé par PHP et le résultat suivant sera envoyé à votre navigateur :12345678&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;  &amp;lt;title&amp;gt;Test PHP&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;p&amp;gt;Bonjour le monde&amp;lt;/p&amp;gt; &amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;  Ce programme est extrêmement simple et vous n’avez pas besoin de PHP pour créer une page web comme ceci.          Le serveur sait que ce fichier a besoin d’être interprété par PHP car vous utilisez l’extension “.php”, et le serveur est configuré pour les passer à PHP.      Voyez cela comme une page HTML normale qui contient une série de balises spéciales qui vont vous permettre de réaliser beaucoup de choses intéressantes.        Le point important de cet exemple était de montrer le format des balises spéciales PHP.          Nous avons utilisé ici &amp;lt;?php pour indiquer le début de la balise PHP. Puis, nous avons introduit les commandes PHP et refermé les balises PHP avec ?&amp;gt;.      Vous pouvez passer du mode PHP au mode HTML et vice-versa, de cette manière, et à votre guise.      Le code PHP est inclus entre une balise de début &amp;lt;?php et une balise de fin ?&amp;gt; qui permettent au serveur web de passer en mode PHP.      Ce qui distingue PHP des langages de script comme le Javascript, est que le code est exécuté sur le serveur, générant ainsi le HTML, qui sera ensuite envoyé au client.      Le client ne reçoit que le résultat du script, sans aucun moyen d’avoir accès au code qui a produit ce résultat.      Le grand avantage de PHP est qu’il est extrêmement simple pour les néophytes, mais offre des fonctionnalités avancées pour les experts.      ",
+      "url": "/php/hello-world-php.html#notre-premier-script-php--bonjourphp",
+      "author": "",
+      "categories": "commencer-php"
+    }
+,
+"programmation-php-html": {
+      "title": "Programmation avec PHP",
+      "content"	 : "Programmation avec PHP  Les 4 instructions du base          Entrée et sortie      Variable      Condition      Boucle      ",
+      "url": "/php/programmation-php.html",
+      "author": "",
+      "categories": "commencer-php"
+    }
+,
+"concepts-web-php-html": {
+      "title": "Concepts Web",
+      "content"	 : "Concepts Web  GET &amp;amp; POST  Paramètres d’une page web PHP          $_GET        Passage des paramètres d’une page à l’autre          $_POST      ",
+      "url": "/php/concepts-web-php.html",
+      "author": "",
+      "categories": "commencer-php"
     }
 
 

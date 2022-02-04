@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html dir="ltr" lang="fr_FR" class="sidebar-visible no-js codeur">
+    <head>
+        <meta name="author" content="ESSARRAJ Fouad" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Une introduction à PHP | Introduction - Tutoriel PHP</title>
+        <!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Une introduction à PHP" />
+<meta property="og:locale" content="fr_FR" />
+<meta name="description" content="Apprendre PHP par tutoriels" />
+<meta property="og:description" content="Apprendre PHP par tutoriels" />
+<link rel="canonical" href="http://localhost:4000/php/docs/introduction-%E0-php.html" />
+<meta property="og:url" content="http://localhost:4000/php/docs/introduction-%E0-php.html" />
+<meta property="og:site_name" content="Tutoriel PHP" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Une introduction à PHP" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"http://localhost:4000/php/docs/introduction-%E0-php.html","headline":"Une introduction à PHP","description":"Apprendre PHP par tutoriels","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+        <link rel="shortcut icon" href="/php/favicon.png">
+        <link rel="stylesheet" href="/php/assets/css/variables.css">
+        <link rel="stylesheet" href="/php/assets/css/general.css">
+        <link rel="stylesheet" href="/php/assets/css/chrome.css">
+        <link rel="stylesheet" href="/php/assets/css/print.css" media="print">
+        <link rel="stylesheet" href="/php/vendor/FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="/php/vendor/fonts/fonts.css">
+        <!-- <link rel="stylesheet" href="/php/vendor/highlight1/highlight.css">
+        <link rel="stylesheet" href="/php/vendor/highlight1/tomorrow-night.css">
+        <link rel="stylesheet" href="/php/vendor/highlight1/ayu-highlight.css"> -->
+        <!-- <link rel="stylesheet" href="/php/vendor/pygments-css/pygments.css"> -->
+        <link rel="stylesheet" href="/php/vendor/pygments-css/nimbus-pygments.css">
+        <link rel="stylesheet" href="/php/vendor/pygments-css/code-format.scss">
+       
+        <link rel="stylesheet" href="/php/assets/css/custom.css">
+        <script type="text/javascript" src="/php/assets/js/theme-config.js"></script></head>
+    <body>
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+<div class="sidebar-scrollbox">
+    
+<a href="/" >
+    <img width="100%" src="https://codeur-academy.com/Content/CodeurAcademy/images/logo-codeur-academy.png" alt="Codeur Academy">
+</a>
+
+ 
+
+<ol class="chapter"><li class="chapter-item expanded affix"></li>
+    <li class="part-title"> Introduction</li>
+        <li class="chapter-item expanded">
+        <a href="/php/index.html" class="">
+            <strong aria-hidden="true">1.</strong>Initiation à PHP</a></li><li class="chapter-item expanded">
+        <a href="/php/index.html" class="">
+            <strong aria-hidden="true">2.</strong>Qu&#39;est ce que PHP ?</a></li><li class="chapter-item expanded">
+        <a href="/php/plan-formation.html" class="">
+            <strong aria-hidden="true">3.</strong>Plan du formation</a></li><li class="chapter-item expanded affix"></li>
+    <li class="part-title"> Bien démarrer</li>
+        <li class="chapter-item expanded">
+        <a href="/php/bien-d%C3%A9marrer-avec-PHP.html" class="">
+            <strong aria-hidden="true">4.</strong>Introduction</a></li><li class="chapter-item expanded">
+        <a href="/php/installation-php.html" class="">
+            <strong aria-hidden="true">5.</strong>Installation du PHP</a></li><li class="chapter-item expanded">
+        <a href="/php/hello-world-php.html" class="">
+            <strong aria-hidden="true">6.</strong>Bonjour PHP</a></li><li class="chapter-item expanded">
+        <a href="/php/programmation-php.html" class="">
+            <strong aria-hidden="true">7.</strong>Programmation avec PHP</a></li><li class="chapter-item expanded">
+        <a href="/php/concepts-web-php.html" class="">
+            <strong aria-hidden="true">8.</strong>Concepts Web</a></li><li class="chapter-item expanded affix"></li>
+    <li class="part-title"> Bases du PHP</li>
+        <li class="chapter-item expanded affix"></li>
+    <li class="part-title"> POO</li>
+        <li class="chapter-item expanded affix"></li>
+    <li class="part-title"> Notions avancées</li>
+        </ol>
+</div>
+   <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+</nav>
+        <div id="page-wrapper" class="page-wrapper">
+            <h1 id="une-introduction-à-php">Une introduction à PHP</h1>
+
+<ul>
+  <li>PHP est un langage de programmation pour la création de la programmation back-end des pages web.
+    <ul>
+      <li>Son interfaçage avec la base de données MySQL permet d’élaborer des applications rapides, avec une actualisation en temps réel des données.</li>
+      <li>Installer PHP est la solution pour stoker et afficher des milliers d’informations sur vos sites web.</li>
+    </ul>
+  </li>
+  <li>Les principaux avantages à installer un script PHP
+    <ul>
+      <li>Exécution record des scripts coté serveur.</li>
+      <li>Protections des scripts.</li>
+      <li>Langage gratuit en Open Source.</li>
+      <li>Simplicité d’interfaçage avec des systèmes de bases de données comme MySQL.</li>
+    </ul>
+  </li>
+  <li>Architecture CLIENT- SERVEUR
+    <ul>
+      <li>Votre navigateur est le CLIENT.
+        <ul>
+          <li>C’est lui qui demande la page web au serveur… et le client se fournit dans la base de donnée de fonctions et de contenus du serveur.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Description d’une requête HTTP basique :
+    <ul>
+      <li>Le navigateur envoi au serveur, qui héberge le site, l’adresse que vous avez tapé dans la barre d’adresses de votre navigateur.</li>
+      <li>Le serveur retourne après traitement le contenu de la page à votre navigateur</li>
+      <li>Observation :
+        <ul>
+          <li>Avec ou sans PHP, le serveur traite la demande et retourne la page.</li>
+          <li>Additionner du PHP au traitement n’a aucune incidence sur le parcours basique de la requête http.</li>
+          <li>Le serveur va se charger de traiter vos scripts PHP et se chargera aussi du traitement des données de vos tables SQL, avant de renvoyer la page terminée à votre navigateur.</li>
+        </ul>
+      </li>
+      <li>Coté SERVEUR
+        <ul>
+          <li>Le PHP est interprété directement et uniquement par le serveur.</li>
+          <li>Les aspirateurs ne peuvent pas aspirer des pages PHP.</li>
+          <li>Celle-ci sont protégées contre le téléchargement par le serveur.</li>
+          <li>La seule manière d’accéder à vos pages PHP est par un client FTP / SSH comme Filezilla ou Putty .</li>
+        </ul>
+      </li>
+      <li>Le serveur ne renvoi que des données (le résultat des traitements de requêtes ou de fonctions..) ce qui constitue le source de la page (HTML, JavaScript, CSS, etc. + des informations sur les headers…) à la machine du client.</li>
+    </ul>
+  </li>
+  <li>Les différents langages comme le HTML, JavaScript ou CSS sont des langages CLIENTS.
+    <ul>
+      <li>Les scripts de ces différents langages sont téléchargés sur votre ordinateur et ensuite interprétés par votre navigateur.</li>
+    </ul>
+  </li>
+  <li>Base de données
+    <ul>
+      <li>MySQL analyse et exécute le code SQL.</li>
+      <li>PHP sert de support pour envoyer des requêtes au serveur MySQL.</li>
+      <li>phpMyAdmin est une administration en Open Source pour administrer votre base de données MySQL.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Dans cette section, nous voulons illustrer les principes de base de PHP dans une courte introduction. Ce chapitre traite uniquement de création de pages web dynamiques avec PHP.</p>
+
+<p>Les pages web qui exploitent PHP sont traitées comme des pages HTML standards, et vous pouvez les créer, éditer et effacer tout comme vous le faites normalement avec des pages HTML classiques.</p>
+
+<h1 id="votre-première-page-php">Votre première page PHP</h1>
+
+<p>Si votre serveur web supporte PHP, vous n’avez rien à faire. Simplement, créez un dossier, puis créez un fichier texte, avec l’extension .php : le serveur va automatiquement l’exécuter avec PHP. Il n’y a pas de compilation.</p>
+
+<h2 id="exemple-1---notre-premier-script-php--bonjourphp">Exemple 1 :  Notre premier script PHP : bonjour.php</h2>
+
+<p>Créez un fichier appelé <em>bonjour.php</em> dans votre dossier web racine (DOCUMENT_ROOT) avec le contenu suivant :</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;html&gt;</span>
+ <span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Test PHP<span class="nt">&lt;/title&gt;</span>
+ <span class="nt">&lt;/head&gt;</span>
+ <span class="nt">&lt;body&gt;</span>
+ <span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="s1">'&lt;p&gt;Bonjour le monde&lt;/p&gt;'</span><span class="p">;</span> <span class="cp">?&gt;</span>
+ <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Utilisez votre navigateur pour accéder au fichier via votre serveur web, en ajoutant le nom de fichier /bonjour.php. Le fichier sera analysé par PHP et le résultat suivant sera envoyé à votre navigateur :</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;html&gt;</span>
+ <span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Test PHP<span class="nt">&lt;/title&gt;</span>
+ <span class="nt">&lt;/head&gt;</span>
+ <span class="nt">&lt;body&gt;</span>
+ <span class="nt">&lt;p&gt;</span>Bonjour le monde<span class="nt">&lt;/p&gt;</span>
+ <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Ce programme est extrêmement simple et vous n’avez pas besoin de PHP pour créer une page web comme ceci. Elle ne fait qu’afficher Bonjour le monde, grâce à la fonction <em>echo</em> de PHP. Notez que ce fichier n’a pas besoin d’être exécutable ou autre, dans aucun cas. Le serveur sait que ce fichier a besoin d’être interprété par PHP car vous utilisez l’extension “.php”, et le serveur est configuré pour les passer à PHP. Voyez cela comme une page HTML normale qui contient une série de balises spéciales qui vont vous permettre de réaliser beaucoup de choses intéressantes.</p>
+
+<p>Le point important de cet exemple était de montrer le format des balises spéciales PHP. Nous avons utilisé ici <em>&lt;?php</em> pour indiquer le début de la balise PHP. Puis, nous avons introduit <em>les commandes PHP</em> et refermé les balises PHP avec <em>?&gt;</em>. Vous pouvez passer du mode PHP au mode HTML et vice-versa, de cette manière, et à votre guise.</p>
+
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="/php/vendor/lunrjs/lunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/php/vendor/mark/mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/php/vendor/mark/jquery.mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/php/assets/js/variables.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/php/assets/js/search2.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/php/vendor/clipboard/clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <!-- <script src="/php/vendor/highlight/highlight1.js" type="text/javascript" charset="utf-8"></script> -->
+        <script src="/php/assets/js/book.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="/php/assets/js/custom.js"></script>
+    </body>
+</html>

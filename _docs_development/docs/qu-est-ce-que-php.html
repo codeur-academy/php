@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html dir="ltr" lang="fr_FR" class="sidebar-visible no-js codeur">
+    <head>
+        <meta name="author" content="ESSARRAJ Fouad" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Qu’est ce que PHP? | Introduction - Tutoriel PHP</title>
+        <!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Qu’est ce que PHP?" />
+<meta property="og:locale" content="fr_FR" />
+<meta name="description" content="Apprendre PHP par tutoriels" />
+<meta property="og:description" content="Apprendre PHP par tutoriels" />
+<link rel="canonical" href="http://localhost:4000/php/docs/qu-est-ce-que-php.html" />
+<meta property="og:url" content="http://localhost:4000/php/docs/qu-est-ce-que-php.html" />
+<meta property="og:site_name" content="Tutoriel PHP" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Qu’est ce que PHP?" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"http://localhost:4000/php/docs/qu-est-ce-que-php.html","headline":"Qu’est ce que PHP?","description":"Apprendre PHP par tutoriels","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+        <link rel="shortcut icon" href="/php/favicon.png">
+        <link rel="stylesheet" href="/php/assets/css/variables.css">
+        <link rel="stylesheet" href="/php/assets/css/general.css">
+        <link rel="stylesheet" href="/php/assets/css/chrome.css">
+        <link rel="stylesheet" href="/php/assets/css/print.css" media="print">
+        <link rel="stylesheet" href="/php/vendor/FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="/php/vendor/fonts/fonts.css">
+        <!-- <link rel="stylesheet" href="/php/vendor/highlight1/highlight.css">
+        <link rel="stylesheet" href="/php/vendor/highlight1/tomorrow-night.css">
+        <link rel="stylesheet" href="/php/vendor/highlight1/ayu-highlight.css"> -->
+        <!-- <link rel="stylesheet" href="/php/vendor/pygments-css/pygments.css"> -->
+        <link rel="stylesheet" href="/php/vendor/pygments-css/nimbus-pygments.css">
+        <link rel="stylesheet" href="/php/vendor/pygments-css/code-format.scss">
+       
+        <link rel="stylesheet" href="/php/assets/css/custom.css">
+        <script type="text/javascript" src="/php/assets/js/theme-config.js"></script></head>
+    <body>
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+<div class="sidebar-scrollbox">
+    
+<a href="/" >
+    <img width="100%" src="https://codeur-academy.com/Content/CodeurAcademy/images/logo-codeur-academy.png" alt="Codeur Academy">
+</a>
+
+ 
+
+<ol class="chapter"><li class="chapter-item expanded affix"></li>
+    <li class="part-title"> Introduction</li>
+        <li class="chapter-item expanded">
+        <a href="/php/index.html" class="">
+            <strong aria-hidden="true">1.</strong>Initiation à PHP</a></li><li class="chapter-item expanded">
+        <a href="/php/index.html" class="">
+            <strong aria-hidden="true">2.</strong>Qu&#39;est ce que PHP ?</a></li><li class="chapter-item expanded">
+        <a href="/php/plan-formation.html" class="">
+            <strong aria-hidden="true">3.</strong>Plan du formation</a></li><li class="chapter-item expanded affix"></li>
+    <li class="part-title"> Bien démarrer</li>
+        <li class="chapter-item expanded">
+        <a href="/php/bien-d%C3%A9marrer-avec-PHP.html" class="">
+            <strong aria-hidden="true">4.</strong>Introduction</a></li><li class="chapter-item expanded">
+        <a href="/php/installation-php.html" class="">
+            <strong aria-hidden="true">5.</strong>Installation du PHP</a></li><li class="chapter-item expanded">
+        <a href="/php/hello-world-php.html" class="">
+            <strong aria-hidden="true">6.</strong>Bonjour PHP</a></li><li class="chapter-item expanded">
+        <a href="/php/programmation-php.html" class="">
+            <strong aria-hidden="true">7.</strong>Programmation avec PHP</a></li><li class="chapter-item expanded">
+        <a href="/php/concepts-web-php.html" class="">
+            <strong aria-hidden="true">8.</strong>Concepts Web</a></li><li class="chapter-item expanded affix"></li>
+    <li class="part-title"> Bases du PHP</li>
+        <li class="chapter-item expanded affix"></li>
+    <li class="part-title"> POO</li>
+        <li class="chapter-item expanded affix"></li>
+    <li class="part-title"> Notions avancées</li>
+        </ol>
+</div>
+   <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+</nav>
+        <div id="page-wrapper" class="page-wrapper">
+            <h1 id="quest-ce-que-php">Qu’est ce que PHP?</h1>
+
+<p>PHP (Hypertext Preprocessor) est un langage de scripts généraliste et Open Source, spécialement conçu pour le développement d’applications web. Il peut être intégré facilement au HTML.</p>
+
+<p>Bien… mais qu’est ce que cela veut dire ? Un exemple :</p>
+
+<p>Exemple 1 : Exemple d’introduction</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="rouge-code"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;title&gt;</span>Exemple<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+
+<span class="cp">&lt;?php</span>
+<span class="k">echo</span> <span class="s2">"Bonjour, je suis un script PHP !"</span><span class="p">;</span>
+<span class="cp">?&gt;</span>
+
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Ce code affiche “Bonjour, je suis un script PHP !”).</p>
+
+<p>Le code PHP est inclus entre une balise de début &lt;?php et une balise de fin ?&gt; qui permettent au serveur web de passer en mode PHP.</p>
+
+<p>Ce qui distingue PHP des langages de script comme le Javascript, est que le code est exécuté sur le serveur, générant ainsi le HTML, qui sera ensuite envoyé au client. Le client ne reçoit que le résultat du script, sans aucun moyen d’avoir accès au code qui a produit ce résultat.</p>
+
+<p>Le grand avantage de PHP est qu’il est extrêmement simple pour les néophytes, mais offre des fonctionnalités avancées pour les experts.</p>
+
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="/php/vendor/lunrjs/lunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/php/vendor/mark/mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/php/vendor/mark/jquery.mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/php/assets/js/variables.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/php/assets/js/search2.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/php/vendor/clipboard/clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <!-- <script src="/php/vendor/highlight/highlight1.js" type="text/javascript" charset="utf-8"></script> -->
+        <script src="/php/assets/js/book.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="/php/assets/js/custom.js"></script>
+    </body>
+</html>

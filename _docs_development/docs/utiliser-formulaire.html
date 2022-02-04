@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html dir="ltr" lang="fr_FR" class="sidebar-visible no-js codeur">
+    <head>
+        <meta name="author" content="ESSARRAJ Fouad" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Utiliser un formulaire | Introduction - Tutoriel PHP</title>
+        <!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Utiliser un formulaire" />
+<meta property="og:locale" content="fr_FR" />
+<meta name="description" content="Apprendre PHP par tutoriels" />
+<meta property="og:description" content="Apprendre PHP par tutoriels" />
+<link rel="canonical" href="http://localhost:4000/php/docs/utiliser-formulaire.html" />
+<meta property="og:url" content="http://localhost:4000/php/docs/utiliser-formulaire.html" />
+<meta property="og:site_name" content="Tutoriel PHP" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Utiliser un formulaire" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"http://localhost:4000/php/docs/utiliser-formulaire.html","headline":"Utiliser un formulaire","description":"Apprendre PHP par tutoriels","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+        <link rel="shortcut icon" href="/php/favicon.png">
+        <link rel="stylesheet" href="/php/assets/css/variables.css">
+        <link rel="stylesheet" href="/php/assets/css/general.css">
+        <link rel="stylesheet" href="/php/assets/css/chrome.css">
+        <link rel="stylesheet" href="/php/assets/css/print.css" media="print">
+        <link rel="stylesheet" href="/php/vendor/FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="/php/vendor/fonts/fonts.css">
+        <!-- <link rel="stylesheet" href="/php/vendor/highlight1/highlight.css">
+        <link rel="stylesheet" href="/php/vendor/highlight1/tomorrow-night.css">
+        <link rel="stylesheet" href="/php/vendor/highlight1/ayu-highlight.css"> -->
+        <!-- <link rel="stylesheet" href="/php/vendor/pygments-css/pygments.css"> -->
+        <link rel="stylesheet" href="/php/vendor/pygments-css/nimbus-pygments.css">
+        <link rel="stylesheet" href="/php/vendor/pygments-css/code-format.scss">
+       
+        <link rel="stylesheet" href="/php/assets/css/custom.css">
+        <script type="text/javascript" src="/php/assets/js/theme-config.js"></script></head>
+    <body>
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+<div class="sidebar-scrollbox">
+    
+<a href="/" >
+    <img width="100%" src="https://codeur-academy.com/Content/CodeurAcademy/images/logo-codeur-academy.png" alt="Codeur Academy">
+</a>
+
+ 
+
+<ol class="chapter"><li class="chapter-item expanded affix"></li>
+    <li class="part-title"> Introduction</li>
+        <li class="chapter-item expanded">
+        <a href="/php/index.html" class="">
+            <strong aria-hidden="true">1.</strong>Initiation à PHP</a></li><li class="chapter-item expanded">
+        <a href="/php/index.html" class="">
+            <strong aria-hidden="true">2.</strong>Qu&#39;est ce que PHP ?</a></li><li class="chapter-item expanded">
+        <a href="/php/plan-formation.html" class="">
+            <strong aria-hidden="true">3.</strong>Plan du formation</a></li><li class="chapter-item expanded affix"></li>
+    <li class="part-title"> Bien démarrer</li>
+        <li class="chapter-item expanded">
+        <a href="/php/bien-d%C3%A9marrer-avec-PHP.html" class="">
+            <strong aria-hidden="true">4.</strong>Introduction</a></li><li class="chapter-item expanded">
+        <a href="/php/installation-php.html" class="">
+            <strong aria-hidden="true">5.</strong>Installation du PHP</a></li><li class="chapter-item expanded">
+        <a href="/php/hello-world-php.html" class="">
+            <strong aria-hidden="true">6.</strong>Bonjour PHP</a></li><li class="chapter-item expanded">
+        <a href="/php/programmation-php.html" class="">
+            <strong aria-hidden="true">7.</strong>Programmation avec PHP</a></li><li class="chapter-item expanded">
+        <a href="/php/concepts-web-php.html" class="">
+            <strong aria-hidden="true">8.</strong>Concepts Web</a></li><li class="chapter-item expanded affix"></li>
+    <li class="part-title"> Bases du PHP</li>
+        <li class="chapter-item expanded affix"></li>
+    <li class="part-title"> POO</li>
+        <li class="chapter-item expanded affix"></li>
+    <li class="part-title"> Notions avancées</li>
+        </ol>
+</div>
+   <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+</nav>
+        <div id="page-wrapper" class="page-wrapper">
+            <h1 id="utiliser-un-formulaire">Utiliser un formulaire</h1>
+
+<p>L’un des points forts de PHP est sa capacité à gérer les formulaires. Le concept de base qui est important à comprendre est que tous les champs d’un formulaire seront automatiquement disponibles dans le script PHP d’action.</p>
+
+<h2 id="exemple---un-simple-formulaire-html">Exemple - Un simple formulaire HTML</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"action.php"</span> <span class="na">method=</span><span class="s">"post"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;p&gt;</span>Votre nom : <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"nom"</span> <span class="nt">/&gt;&lt;/p&gt;</span>
+ <span class="nt">&lt;p&gt;</span>Votre âge : <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"age"</span> <span class="nt">/&gt;&lt;/p&gt;</span>
+ <span class="nt">&lt;p&gt;&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"OK"</span><span class="nt">&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Il n’y rien de particulier dans ce formulaire. Il est en HTML pur, sans aucune configuration particulière. Lorsque le visiteur remplit le formulaire, et clique sur le bouton OK, le fichier action.php est appelé. Dans ce fichier, vous pouvez écrire le script suivant :</p>
+
+<h2 id="exemple---afficher-des-données-issues-dun-formulaire">Exemple - Afficher des données issues d’un formulaire</h2>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>Bonjour, <span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nb">htmlspecialchars</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">'nom'</span><span class="p">]);</span> <span class="cp">?&gt;</span>.
+
+Tu as <span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="p">(</span><span class="n">int</span><span class="p">)</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">'age'</span><span class="p">];</span> <span class="cp">?&gt;</span> ans.
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Voici le résultat que vous pourriez obtenir, selon les valeurs que vous avez saisies :</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>Bonjour Jean.
+Tu as 29 ans.
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Mis à part les parties <em>htmlspecialchars()</em> et <em>(int)</em>, ce script ne fait que des choses évidentes.</p>
+
+<ul>
+  <li>htmlspecialchars() s’assure que tous les caractères spéciaux HTML sont proprement encodés afin d’éviter des injections de balises HTML et de Javascript dans vos pages. Pour l’âge, vu que nous savons que c’est un entier, vous pouvez le convertir en un entier. Vous pouvez également demander à PHP de le faire automatiquement à votre place en utilisant l’extension filter.</li>
+  <li>Les variables $_POST[‘nom’] et $_POST[‘age’] sont automatiquement créées par PHP. Un peu plus tôt dans ce tutoriel, nous avons utilisé la variable $_SERVER, une superglobale. Maintenant, nous avons introduit une autre superglobale $_POST qui contient toutes les données envoyées par la méthode POST. Notez que dans notre formulaire, nous avons choisi la méthode POST.</li>
+</ul>
+
+<p>Si vous aviez utilisé la méthode GET alors notre formulaire aurait placé ces informations dans la variable $_GET, une autre superglobale. Vous pouvez aussi utiliser la variable $_REQUEST, si vous ne souhaitez pas vous embarrasser de la méthode utilisée. Elle contient un mélange des données de GET, POST, COOKIE et FILE.</p>
+
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="/php/vendor/lunrjs/lunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/php/vendor/mark/mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/php/vendor/mark/jquery.mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/php/assets/js/variables.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/php/assets/js/search2.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/php/vendor/clipboard/clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <!-- <script src="/php/vendor/highlight/highlight1.js" type="text/javascript" charset="utf-8"></script> -->
+        <script src="/php/assets/js/book.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="/php/assets/js/custom.js"></script>
+    </body>
+</html>
