@@ -1,11 +1,11 @@
 # Titre et description
-title: Initiation à HTML5 et CSS3
-
-description: Apprendre HTML5 à partir de zéro. Apprendre CSS3 à partir de zéro. Réalisation des projets du monde réel. Création des pages responsive 
+title: Tutoriel PHP
+destination: docs
+description: Apprendre PHP par tutoriels
 locale: fr_FR
 environment: production
 # URL
-baseurl: "/html5-css3"
+baseurl: "/php"
 url: "https://codeur-academy.com" 
 
 # Formation

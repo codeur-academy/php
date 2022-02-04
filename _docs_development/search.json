@@ -1,0 +1,40 @@
+{
+"index-html": {
+      "title": "Initiation à PHP",
+      "content"	 : "Tutoriel PHPNous allons apprendre dans cette formation comment développer des pages web avec PHP.",
+      "url": "/php/index.html",
+      "author": "",
+      "categories": "introduction"
+    },
+"index-html#références": {
+      "title": "Références  (Initiation à PHP)",
+      "content"	 : "Références  www.php.net/manual/fr/index.php  phpsources",
+      "url": "/php/index.html#références",
+      "author": "",
+      "categories": "introduction"
+    }
+,
+"plan-formation-html": {
+      "title": "Plan du formation",
+      "content"	 : "Plan du formation",
+      "url": "/php/plan-formation.html",
+      "author": "",
+      "categories": "introduction"
+    },
+"plan-formation-html#introduction": {
+      "title": "Introduction  (Plan du formation)",
+      "content"	 : "Introduction  Introduction",
+      "url": "/php/plan-formation.html#introduction",
+      "author": "",
+      "categories": "introduction"
+    },
+"plan-formation-html#les-base-du-php": {
+      "title": "Les base du PHP  (Plan du formation)",
+      "content"	 : "Les base du PHP  Bonjour tous le monde          Syntaxe de base : le minium pour commencer                  La fonction ECHO                    Installation du PHP      Comment ça marche : Client/ Serveur        Les 4 instructions du base          Entrée et sortie      Variable      Condition      Boucle        Les base de programmation Web                  Installation    Les variables  Les chaines de caractères  Les Opérateurs  La fonction Include  Tests conditionnels - If  Tests conditionnels - If Else  Tests conditionnels - If - Else if - Else  Tests conditionnels - Switch  Boucles: Introduction  Boucle Foreach  Boucle While  Boucle Do while  Break et Continue  POST &amp;amp; GET  Les SESSIONS  Les COOKIES  Dates et Heures  Les fichiers textes  Les ModulosAu moment de commencer  Qu’est ce que PHP?  Une introduction à PHP  Variable   Tableau  Utiliser un formulaireLes bases de PHP  Introduction  Environnement de développement  Syntaxe  Types de variables  Constantes  Types d’opérateurs  Condition  Types de boucles  Tableaux  Chaînes de caractères  Concepts Web  GET &amp;amp; POST  Inclusion de fichiers  Fichiers et Entrée / Sorties  Fonctions  Cookies  Sessions  Envoi d’emails  Téléchargement de fichiers  Norme de codageNotion avancé  Variables prédéfinies  Expression régulière  Gestion des erreurs  Débogage  Date et heure  PHP et MySQL  PHP et AJAX  PHP et XML  Orienté objetFormulaire",
+      "url": "/php/plan-formation.html#les-base-du-php",
+      "author": "",
+      "categories": "introduction"
+    }
+
+
+}
