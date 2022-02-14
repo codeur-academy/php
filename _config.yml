@@ -89,4 +89,5 @@ exclude:
   - template.potx
   - EspaceTravail/
   - README.md
+  - docs
 

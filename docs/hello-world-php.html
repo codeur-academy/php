@@ -16,11 +16,11 @@
 <meta property="og:url" content="https://codeur-academy.com/php/hello-world-php.html" />
 <meta property="og:site_name" content="Tutoriel PHP" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-02-04T13:24:51+01:00" />
+<meta property="article:published_time" content="2022-02-14T13:06:00+01:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Bonjour PHP" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"https://codeur-academy.com/php/hello-world-php.html","headline":"Bonjour PHP","dateModified":"2022-02-04T13:24:51+01:00","datePublished":"2022-02-04T13:24:51+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://codeur-academy.com/php/hello-world-php.html"},"description":"Bonjour PHP","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","url":"https://codeur-academy.com/php/hello-world-php.html","headline":"Bonjour PHP","dateModified":"2022-02-14T13:06:00+01:00","datePublished":"2022-02-14T13:06:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://codeur-academy.com/php/hello-world-php.html"},"description":"Bonjour PHP","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
         <link rel="shortcut icon" href="/php/favicon.png">
@@ -134,15 +134,20 @@
         <main>
             <h1 id="bonjour-php">Bonjour PHP</h1>
 
+<p>Une page PHP est une page HTML qui contient le code PHP balisé dans une la balise PHP.</p>
+
+<p>Le code PHP a besoin du compilateur PHP pour être transformé en code HTML.</p>
+
+<p>Nous allons créer dans cette session de formation notre premier script PHP. Nous allons afficher le message <strong>Bonjour</strong>. Ce script nous va permettre de découvrir deux chose :</p>
+
 <ul>
-  <li>Les pages web qui exploitent PHP sont traitées comme des pages HTML standards, et vous pouvez les créer, éditer et effacer tout comme vous le faites normalement avec des pages HTML classiques.</li>
+  <li>le minimum du syntaxe pour commencer à coder avec PHP</li>
+  <li>Le fonctionnement de notre environnement d’exécution de code PHP</li>
 </ul>
 
-<h2 id="notre-premier-script-php--bonjourphp">Notre premier script PHP : bonjour.php</h2>
+<h2 id="programme-bonjour">Programme Bonjour</h2>
 
-<ul>
-  <li>Créez un fichier appelé <em>bonjour.php</em> dans votre dossier  avec le contenu suivant :</li>
-</ul>
+<p>Créez un fichier appelé <em>bonjour.php</em> dans votre dossier avec le contenu suivant :</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
@@ -152,19 +157,33 @@
 6
 7
 8
+9
+10
 </pre></td><td class="rouge-code"><pre><span class="nt">&lt;html&gt;</span>
  <span class="nt">&lt;head&gt;</span>
   <span class="nt">&lt;title&gt;</span>Bonjour PHP<span class="nt">&lt;/title&gt;</span>
  <span class="nt">&lt;/head&gt;</span>
  <span class="nt">&lt;body&gt;</span>
-     <span class="nt">&lt;p&gt;</span><span class="cp">&lt;?php echo 'Bonjour le monde'; ?&gt;</span><span class="nt">&lt;/p&gt;</span>
+ <span class="cp">&lt;?php 
+ echo '&lt;p&gt;Bonjour tous le monde&lt;/p&gt;'; 
+ ?&gt;</span>
  <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<ul>
-  <li>Utilisez votre navigateur pour accéder au fichier via votre serveur web, en ajoutant le nom de fichier /bonjour.php. Le fichier sera analysé par PHP et le résultat suivant sera envoyé à votre navigateur :</li>
-</ul>
+<p>Pour exécuter votre page, vous devez lancer un serveur de test PHP en utilisant la commande :</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>php <span class="nt">-s</span> localhost:8080
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Utilisez maintenant votre navigateur pour accéder au fichier en utilisant le lien :</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>http://localhost:8080/bonjour.php
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Le résultat du navigateur :</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
@@ -173,32 +192,29 @@
 5
 6
 7
-8
 </pre></td><td class="rouge-code"><pre><span class="nt">&lt;html&gt;</span>
  <span class="nt">&lt;head&gt;</span>
-  <span class="nt">&lt;title&gt;</span>Test PHP<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Bonjour PHP<span class="nt">&lt;/title&gt;</span>
  <span class="nt">&lt;/head&gt;</span>
  <span class="nt">&lt;body&gt;</span>
- <span class="nt">&lt;p&gt;</span>Bonjour le monde<span class="nt">&lt;/p&gt;</span>
- <span class="nt">&lt;/body&gt;</span>
+ <span class="nt">&lt;p&gt;</span>Bonjour tous le monde<span class="nt">&lt;/p&gt;</span> <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
 <ul>
-  <li>Ce programme est extrêmement simple et vous n’avez pas besoin de PHP pour créer une page web comme ceci.
+  <li>Ce programme est extrêmement simple, il ajouter un paragraphe dans le code HTML, contenant le message <strong>Bonjour tous le monde</strong>.
     <ul>
-      <li>Le serveur sait que ce fichier a besoin d’être interprété par PHP car vous utilisez l’extension “.php”, et le serveur est configuré pour les passer à PHP.</li>
-      <li>Voyez cela comme une page HTML normale qui contient une série de balises spéciales qui vont vous permettre de réaliser beaucoup de choses intéressantes.</li>
-    </ul>
-  </li>
-  <li>Le point important de cet exemple était de montrer le format des balises spéciales PHP.
-    <ul>
-      <li>Nous avons utilisé ici <em>&lt;?php</em> pour indiquer le début de la balise PHP. Puis, nous avons introduit <em>les commandes PHP</em> et refermé les balises PHP avec <em>?&gt;</em>.</li>
-      <li>Vous pouvez passer du mode PHP au mode HTML et vice-versa, de cette manière, et à votre guise.</li>
-      <li>Le code PHP est inclus entre une balise de début &lt;?php et une balise de fin ?&gt; qui permettent au serveur web de passer en mode PHP.</li>
-      <li>Ce qui distingue PHP des langages de script comme le Javascript, est que le code est exécuté sur le serveur, générant ainsi le HTML, qui sera ensuite envoyé au client.</li>
-      <li>Le client ne reçoit que le résultat du script, sans aucun moyen d’avoir accès au code qui a produit ce résultat.</li>
-      <li>Le grand avantage de PHP est qu’il est extrêmement simple pour les néophytes, mais offre des fonctionnalités avancées pour les experts.</li>
+      <li>Le serveur sait que ce fichier a besoin d’être interprété par PHP car vous utilisez l’extension “.php”.</li>
+      <li>Le code PHP est inclus entre une balise de début &lt;?php et une balise de fin ?&gt;
+        <ul>
+          <li>Vous pouvez passer du mode PHP au mode HTML et vice-versa, de cette manière qui permettent au serveur web de passer en mode PHP.</li>
+        </ul>
+      </li>
+      <li>Ce qui distingue PHP des langages de script comme le Javascript, est que le code est exécuté sur le serveur, générant ainsi le HTML, qui sera ensuite envoyé au client.
+        <ul>
+          <li>Le client ne reçoit que le résultat du script, sans aucun moyen d’avoir accès au code qui a produit ce résultat.</li>
+        </ul>
+      </li>
     </ul>
   </li>
 </ul>

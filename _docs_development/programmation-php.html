@@ -16,11 +16,11 @@
 <meta property="og:url" content="http://localhost:4000/php/programmation-php.html" />
 <meta property="og:site_name" content="Tutoriel PHP" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-02-04T13:16:33+01:00" />
+<meta property="article:published_time" content="2022-02-14T13:05:27+01:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Programmation avec PHP" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"http://localhost:4000/php/programmation-php.html","headline":"Programmation avec PHP","dateModified":"2022-02-04T13:16:33+01:00","datePublished":"2022-02-04T13:16:33+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/php/programmation-php.html"},"description":"Programmation avec PHP","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","url":"http://localhost:4000/php/programmation-php.html","headline":"Programmation avec PHP","dateModified":"2022-02-14T13:05:27+01:00","datePublished":"2022-02-14T13:05:27+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/php/programmation-php.html"},"description":"Programmation avec PHP","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
         <link rel="shortcut icon" href="/php/favicon.png">
@@ -136,6 +136,112 @@
       <li>Boucle</li>
     </ul>
   </li>
+</ul>
+
+<h2 id="sortie">Sortie</h2>
+
+<p>Pour afficher un message dans la page nous pouvons utiliser la fonction <strong>echo</strong></p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="cp">&lt;?php</span>
+    <span class="k">echo</span> <span class="s2">"Affichage d'un message"</span>
+<span class="cp">?&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<h2 id="variable-string">Variable string</h2>
+
+<p>En PHP, vous pouvez utiliser un variable sans le déclarer déclarer. pour utiliser un variable vous tapez <strong>$</strong> suivez par le nom du variable.</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="cp">&lt;?php</span>
+<span class="nv">$message</span> <span class="o">=</span> <span class="s2">"Bonjour tout le monde"</span><span class="p">;</span>
+<span class="cp">?&gt;</span>
+<span class="nt">&lt;p&gt;</span><span class="cp">&lt;?php</span>  <span class="k">echo</span> <span class="nv">$message</span><span class="p">;</span><span class="cp">?&gt;</span><span class="nt">&lt;/p&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Le type du variable sera déterminer de façon dynamique par le compilateur PHP. Ici, le type du variable <strong>$message</strong> sera string : chaîne de caractère.</p>
+
+<h2 id="variable-entier-et-opérateur-">Variable entier et opérateur +</h2>
+
+<p>Nous notre exemple, nous allons réaliser la somme de deux variables de type entier.</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="cp">&lt;?php</span>
+<span class="nv">$x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="nv">$y</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="nv">$z</span> <span class="o">=</span> <span class="nv">$x</span> <span class="o">+</span> <span class="nv">$y</span><span class="p">;</span>
+<span class="cp">?&gt;</span>
+<span class="nt">&lt;p&gt;</span>Somme de 1 et 3 égale <span class="cp">&lt;?php</span>  <span class="k">echo</span> <span class="nv">$z</span><span class="p">;</span><span class="cp">?&gt;</span> <span class="nt">&lt;/p&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<ul>
+  <li>Le compilateur php va déterminer dynamiquement le type de <strong>$x</strong> comme entier selon sa valeur.</li>
+  <li>L’opérateur <strong>+</strong> peut réaliser la somme des valeurs de deux variable.</li>
+  <li><strong>$x + $y</strong> est appelé expression.
+    <ul>
+      <li>Par définition, une expression a une seul valeur.</li>
+      <li>Dans notre exemple, le variable <em>$z</em> va prendre la valeur 4.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>L’exécution de notre script affiche dans le navigateur</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p&gt;</span>Somme de 1 et 3 égale 4 <span class="nt">&lt;/p&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="condition">Condition</h2>
+
+<p>La condition <strong>if</strong> permet d’exécuter un bloc de code si une condition passée en paramètre est vrais. Dans le cas contraire, il s’exécute le bloc <strong>else</strong> s’il existe.</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="rouge-code"><pre><span class="cp">&lt;?php</span>
+<span class="nv">$x</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="nv">$y</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="nv">$solution</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="nv">$addition</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<span class="k">if</span><span class="p">(</span><span class="nv">$addition</span><span class="p">){</span>
+  <span class="nv">$solution</span> <span class="o">=</span> <span class="nv">$x</span> <span class="o">+</span> <span class="nv">$y</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">else</span><span class="p">{</span>
+  <span class="nv">$solution</span> <span class="o">=</span> <span class="nv">$x</span> <span class="o">-</span> <span class="nv">$y</span><span class="p">;</span> 
+<span class="p">}</span>
+<span class="cp">?&gt;</span>
+<span class="nt">&lt;p&gt;</span>Somme = <span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$solution</span> <span class="cp">?&gt;</span><span class="nt">&lt;/p&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Dans notre exemple le script affiche le résultat suivant :</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p&gt;</span>Somme = 2<span class="nt">&lt;/p&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<ul>
+  <li>Le variable <em>$addition</em> est du type booléen
+    <ul>
+      <li>il peur prendre seulement deux valeur : true ou false.</li>
+    </ul>
+  </li>
+  <li>On peut utiliser <strong>if</strong> sans <strong>else</strong> si nous nous voulons pas traiter le cas contraire de la condition.</li>
 </ul>
 
         </main><nav class="nav-wrapper" aria-label="Page navigation">
